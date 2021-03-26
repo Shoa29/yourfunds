@@ -1,0 +1,740 @@
+<div id="page-wrapper">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header dark-green">Sign Up Application</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="panel panel-green">
+        <div class="panel-heading">{{pageName}}</div>
+        <div class="panel-body" style="font-size:12pt;">
+          <div id="mainContent">
+              <form>
+      <!--          
+                <p class="text_bld"><a id="TopForm"></a>About this Application</p>
+
+                <p>You are completing a retail brokerage account application with YourFund.  This application presents key terms and disclosures alongside required information, to educate the investing public and to ensure that we meet your investment needs.  Please read it carefully as you will select products and services, tell us how you want to communicate with us, and agree to certain provisions that will govern our relationship.
+                </p>
+
+                <p>Unless otherwise indicated in this Application, the words &quot;you,&quot; &quot;your,&quot; &quot;yourself,&quot; and &quot;yours&quot; mean the applicant(s). The words &quot;we,&quot; &quot;us,&quot; and &quot;our&quot; mean XXX Brokerage, 123 Securities Way, Suite 007, Los Angeles, CA 90034. 
+                </p>  
+
+                <p>The process should take approximately 10 to 15 minutes.
+                </p>
+                
+                <p>In order to complete this Application, you will need some or all of the following information: 
+                </p>
+
+              <ul>
+                  <li class="ul">Identification information, such as a driver’s license, passport, or another type of government-issued identification<br><br>
+                  </li>
+                  <li class="ul">Social Security Number<br><br>
+                  </li>
+                  <li class="ul">Information about your annual income, debt, expenses, and net worth<br><br>
+                  </li>
+                  <li class="ul">Back-up contact information<br><br>
+                  </li>
+              </ul>
+
+                <p>The above information helps us comply with various securities regulations and rules and the USA PATRIOT Act, a Federal law that requires all securities firms to obtain, verify, and record information that identifies each applicant.  Please note: if we cannot verify the information you provide, we may be required to restrict or deny your account.
+                </p>
+                  
+                <p>Please remember to notify us if you experience a significant life change, such as the birth of a child, marriage, divorce, death of a spouse, loss of a job, change in financial situation, etc. 
+                </p>  
+
+                <p class="text_bld">Getting Started</p>
+
+                <a href="#TellUs">Primary Applicant section</a>
+                <a href="#Co-Applicant">Co-Applicant section</a>
+                <a href="#AllApplicants">All Applicants section</a>
+                <a href="#FinancialReview">Financial Review section</a>
+                <a href="#WorkWithUs">How You Want to Work With Us section</a>
+                <a href="#Communication">Communication section</a>
+                <a href="#Review">Application Review section</a>
+                <a href="#Signatures">Signatures section</a>
+
+  -->                
+                 <!-- Select an Account -->
+  <!--              <p class="formhead"><a id="SelectAccount"></a>1 Selct An Account</p>
+
+                <fieldset>
+                  
+                  <p class="grayback">Account Type</p>
+                  
+                  <label for="AcctType" class="text_bld">Please select the type of account you are opening:</label><br>
+                    <input type="radio" name="AcctType" value="IndividAcct"
+                      class="radio">Individual Account<br>
+                    <input type="radio" name="AcctType" value="JointAcct"
+                      class="radio">Joint Account (more than one account holder)<br>
+
+                    <p class="text_bld">Already a customer?</p>
+                    <p>Please log in if you have an account with us.</p>
+                    <label for="CustomerID">Customer ID</label>
+                    <input type="text" name="CustomerID" size="20" id="CustomerID" tabindex="0">
+                    <label for="Password">Password</label>
+                    <input type="password" name="Password" size="18" id="Password" tabindex="1">
+
+                  </fieldset>
+
+                  <p class="text_bld">New to Your Fund?</p>
+                  <p>If this is your first account, please continue below to complete the application.</p>
+
+                  <p class="formhead"><a id="TellUs"></a>2 Please Tell Us About Yourself</p>
+
+                  <!-- Primary Applicant -->
+     <!--             <p class="grayback">Primary Applicant </p>
+
+                  <fieldset>       
+
+                   <legend class="text_bld">Contact Information</legend>
+                    <label for="PrimePrefix">Prefix:</label>
+                    <input type="radio" name="PrimePrefix" value="PrimeMr"
+                      class="radio">Mr.
+                    <input type="radio" name="PrimePrefix" value="PrimeMs"
+                      class="radio">Ms.
+                    <input type="radio" name="PrimePrefix" value="PrimeMrs"
+                      class="radio">Mrs.
+                    <input type="radio" name="PrimePrefix" value="PrimeDr"
+                      class="radio">Dr. <br>
+
+                     <label for="PrimeSuffix">Suffix</label>
+                    <input type="radio" name="PrimeSuffix" value="PrimeSr"
+                      class="radio">Sr.
+                    <input type="radio" name="PrimeSuffix" value="PrimeJr"
+                      class="radio">Jr. <br>
+
+                    <label for="PrimeFirst">First Name</label>
+                    <input type="text" name="PrimeFirst" size="25" id="PrimeFirst" tabindex="2" required>
+                    <label for="PrimeMiddle">Middle Name</label>
+                    <input type="text" name="PrimeMiddle" size="25" id="PrimeMiddle" tabindex="3" required>    
+                    <label for="PrimeLast">Last Name</label>
+                    <input type="text" name="PrimeLast" size="30" id="PrimeLast" tabindex="4" required> <br>
+
+                    <label for="PrimePermStreet">Permanent Address</label>
+                    <input type="text" name="PrimePermStreet" size="50" id="PrimePermStreet" tabindex="5" required>    
+                    <label for="PrimePermApt">Apt / Suite No.</label>
+                    <input type="text" name="PrimePermApt" size="10" id="PrimePermApt"tabindex="6" > <br>
+
+                    <label for="PrimePermCity">City</label>
+                    <input type="text" name="PrimePermCity" size="25" id="PrimePermCity" tabindex="7" required>    
+                    <label for="PrimePermState">State</label>
+                    <input type="text" name="PrimePermState" size="15" id="PrimePermState" tabindex="8" required>
+                    <label for="PrimePermZip">ZIP Code</label>
+                    <input pattern="[0-9]{5}" type="text" name="PrimePermZip" size="10" id="PrimePermZip" tabindex="9" required>    
+                    <label for="PrimePermCntry">Country</label>
+                    <input type="text" name="PrimePermCntry" size="25" id="PrimePermCntry" tabindex="10" required> <br>
+
+                    <label for="PrimePhoneHome">Home Phone</label>
+                    <input type="tel" name="PrimePhoneHome" size="14" id="PrimePhoneHome" tabindex="11" required>                    
+                    <label for="PrimePhoneMobile">Mobile Phone</label>
+                    <input type="tel" name="PrimePhoneMobile" size="14" id="PrimePhoneMobile" tabindex="12" required> 
+                    <label for="PrimeEmail">E-Mail Address</label>
+                    <input type="email" name="PrimeEmail" size="25" id="PrimeEmail" tabindex="13" required> <br>
+
+                    <label for="PrimeAddrLessYr" class="text_ital">Please check if you have been at your current home address for less than one year.</label>
+                    <input type="checkbox" name="PrimeAddrLessYr" id="PrimeAddrLessYr"> <br>
+
+                    <label for="PrimeMailStreet">Mailing Address (if different from above)</label>
+                    <input type="text" name="PrimeMailStreet" size="50" id="PrimeMailStreet" tabindex="14" >    
+                    <label for="PrimeMailApt">Apt / Suite No.</label>
+                    <input type="text" name="PrimeMailApt" size="10" id="PrimeMailApt" tabindex="15" > <br>
+
+                    <label for="PrimeMailCity">City</label>
+                    <input type="text" name="PrimeMailCity" size="25" id="PrimeMailCity" tabindex="16" >    
+                    <label for="PrimeMailState">State</label>
+                    <input type="text" name="PrimeMailState" size="15" id="PrimeMailState" tabindex="17" >
+                    <label for="PrimeMailZip">ZIP Code</label>
+                    <input pattern="[0-9]{5}" type="text" name="PrimeMailZip" size="10" id="PrimeMailZip" tabindex="18" >    
+                    <label for="PrimeMailCntry">Country</label>
+                    <input type="text" name="PrimeMailCntry" size="25" id="PrimeMailCntry" tabindex="19" > <br>
+                    
+                     <label for="PrimeMaritalStatus">Are you:</label>
+                    <input type="radio" name="PrimeMaritalStatus" value="PrimeSingle"
+                      class="radio">Single
+                    <input type="radio" name="PrimeMaritalStatus" value="PrimeMarried"
+                      class="radio">Married
+                    <input type="radio" name="PrimeMaritalStatus" value="PrimeDomPrtnr"
+                      class="radio">Domestic Partner
+                    <input type="radio" name="PrimeMaritalStatus" value="PrimeDivorced"
+                      class="radio">Divorced
+                    <input type="radio" name="PrimeMaritalStatus" value="PrimeWidowed"
+                      class="radio">Widowed
+
+                    <label for="PrimeDepend">Number of Dependents:</label>
+                    <input pattern="[0-9]"type="text" name="PrimeDepend" size="5" id="PrimeDepend" tabindex="20" required> <br>  
+
+                    <label for="PrimeMotherName">Mother's Maiden Name:</label>
+                    <input type="text" name="PrimeMotherName" size="20" id="PrimeMotherName" tabindex="21" required> <br>  
+
+                  </fieldset>
+
+                  <fieldset>
+                   <legend class="text_bld">Employment Status</legend>
+
+                   <label for="PrimeEmployStatus">Are you currently:</label>
+                    <input type="radio" name="PrimeEmployStatus" value="PrimeEmpEmploy"
+                      class="radio">Employed
+                    <input type="radio" name="PrimeEmployStatus" value="PrimeEmpSelf"
+                      class="radio">Self-Employed
+                    <input type="radio" name="PrimeEmployStatus" value="PrimeEmpNot"
+                      class="radio">Not Employed
+                    <input type="radio" name="PrimeEmployStatus" value="PrimeEmpRetired"
+                      class="radio">Retired
+                    <input type="radio" name="PrimeEmployStatus" value="PrimeEmpStudent"
+                      class="radio">Student
+                    <input type="radio" name="PrimeEmployStatus" value="PrimeEmpOther"
+                      class="radio">Other <br>
+
+                    <label for="PrimeEmpJob">Job Title</label>
+                    <input type="text" name="PrimePrimeEmpJob" size="25" id="PrimeEmpJob" tabindex="22" required>    
+                    <label for="PrimeEmpOccup">Occupation</label> <br>
+                    <input type="text" name="PrimeEmpOccup" size="25" id="PrimeEmpOccup" tabindex="23" required>
+                    <label for="PrimeEmpBusiness">Employer</label>
+                    <input type="text" name="PrimeEmpBusiness" size="25" id="PrimeEmpBusiness" tabindex="24" required>    
+                    <label for="PrimeEmpYears">Years with this Employer</label>
+                    <input type="text" name="PrimeEmpYears" size="5" id="PrimeEmpYears" tabindex="25" required> <br>  
+
+                    <label for="PrimeEmpStreet">Business Address</label>
+                    <input type="text" name="PrimeEmpStreet" size="50" id="PrimeEmpStreet" tabindex="26" required>    
+                    <label for="PrimeEmpApt">Apt / Suite No.</label>
+                    <input type="text" name="PrimeEmpApt" size="10" id="PrimeEmpApt" tabindex="27" > <br>
+
+                    <label for="PrimeEmpCity">City</label>
+                    <input type="text" name="PrimeEmpCity" size="25" id="PrimeEmpCity" tabindex="28" required>    
+                    <label for="PrimeEmpState">State</label>
+                    <input type="text" name="PrimeEmpState" size="15" id="PrimeEmpState" tabindex="29" required>
+                    <label for="PrimeEmpZip">ZIP Code</label>
+                    <input pattern="[0-9]{5}" type="text" name="PrimeEmpZip" size="10" id="PrimeEmpZip" tabindex="30" required>    
+                    <label for="PrimeEmpCntry">Country</label>
+                    <input type="text" name="PrimeEmpCntry" size="25" id="PrimeEmpCntry" tabindex="31" required> 
+                    <label for="PrimeEmpPhone">Work Phone</label>
+                    <input type="tel" name="PrimeEmpPhone" size="14" id="PrimeEmpPhone" tabindex="32" required>  <br>
+
+                    </fieldset>
+
+                    <fieldset>
+                     <legend class="text_bld"> USA Patriot Act Information (Required by Federal law)</legend>
+
+                     <label for="PrimePatriotDOB">Date of Birth (mm/dd/yyyy)</label>
+                     <input type="date" name="PrimePatriotDOB" size="10" id="PrimePatriotDOB" tabindex="33" required>  
+                     <label for="PrimePatriotSSN">Social Security or Taxpayer ID No.</label>
+                     <input type="text" name="PrimePatriotSSN" size="11" id="PrimePatriotSSN" tabindex="34" required>  
+                     <label for="PrimePatriotCntry">Country of Citizenship</label>
+                     <input type="text" name="PrimePatriotCntry" size="10" id="PrimePatriotCntry" tabindex="35" required> <br>
+
+                     <label for="PrimePatriotID">ID No. (Select one):</label>
+                     <input type="text" name="PrimePatriotID" size="10" id="PrimePatriotID" tabindex="36" required> 
+                     <input type="radio" name="PrimePatriot" value="PrimePatriotDL"
+                      class="radio">Driver's License
+                     <input type="radio" name="PrimePatriot" value="PrimePatriotPass"
+                      class="radio">Passport
+                     <input type="radio" name="PrimePatriot" value="PrimePatriotStateID"
+                      class="radio">State ID
+                      <input type="radio" name="PrimePatriot" value="PrimePatriotGovtID"
+                      class="radio">Other Government-issued ID
+
+                      <label for="PrimePatriotIssue">Place/Country of Issuance</label>
+                      <input type="text" name="PrimePatriotIssue" size="20" id="PrimePatriotIssue" tabindex="37" required> <br>
+
+                      <label for="PrimePatriotIssDate">Issue Date (mm/dd/yyyy)</label>
+                      <input type="date" name="PrimePatriotIssDate" size="10" id="PrimePatriotIssDate" tabindex="38" required>
+                      <label for="PrimePatriotExpDate">Expiration Date (mm/dd/yyyy)</label>
+                      <input type="date" name="PrimePatriotExpDate" size="10" id="PrimePatriotExpDate" tabindex="39" required>    
+                      <label for="PrimePatriotTaxRes">Country of Tax Residence (if different than country of citizenship</label>
+                      <input type="text" name="PrimePatriotTaxRes" size="25" id="PrimePatriotTaxRes" tabindex="40" > <br> 
+
+                      </fieldset>
+
+
+                     <!-- Co-Applicant -->
+      <!--              <p class="grayback"><a id="Co-Applicant"></a>Co-Applicant (if applicable)</p>
+                    <a href="#TopForm">Back to the Top</a>
+
+                    <fieldset>       
+
+                   <legend class="text_bld">Contact Information</legend>
+                    <label for="CoPrefix">Prefix:</label>
+                    <input type="radio" name="CoPrefix" value="CoMr"
+                      class="radio">Mr.
+                    <input type="radio" name="CoPrefix" value="CoMs"
+                      class="radio">Ms.
+                    <input type="radio" name="CoPrefix" value="CoMrs"
+                      class="radio">Mrs.
+                    <input type="radio" name="CoPrefix" value="CoDr"
+                      class="radio">Dr.
+
+                     <label for="CoSuffix">Suffix</label>
+                    <input type="radio" name="CoSuffix" value="CoSr"
+                      class="radio">Sr.
+                    <input type="radio" name="CoSuffix" value="CoJr"
+                      class="radio">Jr. <br>
+
+                    <label for="CoFirst">First Name</label>
+                    <input type="text" name="CoFirst" size="25" id="CoFirst" tabindex="41" >
+                    <label for="CoMiddle">Middle Name</label>
+                    <input type="text" name="CoMiddle" size="25" id="CoMiddle" tabindex="42" >    
+                    <label for="CoLast">Last Name</label>
+                    <input type="text" name="CoLast" size="30" id="CoLast" tabindex="43" > <br>
+
+                    <label for="CoPermStreet">Permanent Address</label>
+                    <input type="text" name="CoPermStreet" size="50" id="CoPermStreet" tabindex="44" >    
+                    <label for="CoPermApt">Apt / Suite No.</label>
+                    <input type="text" name="CoPermApt" size="10" id="CoPermApt" tabindex="45" > <br>
+
+                    <label for="CoPermCity">City</label>
+                    <input type="text" name="CoPermCity" size="25" id="CoPermCity" tabindex="46" >    
+                    <label for="CoPermState">State</label>
+                    <input type="text" name="CoPermState" size="15" id="CoPermState" tabindex="47" >
+                    <label for="CoPermZip">ZIP Code</label>
+                    <input pattern="[0-9]{5}" type="text" name="CoPermZip" size="10" id="CoPermZip" tabindex="48" >    
+                    <label for="CoPermCntry">Country</label>
+                    <input type="text" name="CoPermCntry" size="25" id="CoPermCntry" tabindex="49" > <br>
+
+                    <label for="CoPhoneHome">Home Phone</label>
+                    <input type="tel" name="CoPhoneHome" size="14" id="CoPhoneHome" tabindex="50" >                    
+                    <label for="CoPhoneMobile">Mobile Phone</label>
+                    <input type="tel" name="CoPhoneMobile" size="14" id="CoPhoneMobile" tabindex="52" > 
+                    <label for="CoEmail">E-Mail Address</label>
+                    <input type="email" name="CoEmail" size="25" id="CoEmail" tabindex="52" > <br>
+
+                    <label for="CoAddrLessYr" class="text_ital">Please check if you have been at your current home address for less than one year.</label>
+                    <input type="checkbox" name="CoAddrLessYr" id="CoAddrLessYr"> <br>
+
+                    <label for="CoMailStreet">Mailing Address (if different from above)</label>
+                    <input type="text" name="CoMailStreet" size="50" id="CoMailStreet" tabindex="53" >    
+                    <label for="CoMailApt">Apt / Suite No.</label>
+                    <input type="text" name="CoMailApt" size="10" id="CoMailApt" tabindex="54" > <br>
+
+                    <label for="CoMailCity">City</label>
+                    <input type="text" name="CoMailCity" size="25" id="CoMailCity" tabindex="55" >    
+                    <label for="CoMailState">State</label>
+                    <input type="text" name="CoMailState" size="15" id="CoMailState" tabindex="56" >
+                    <label for="CoMailZip">ZIP Code</label>
+                    <input pattern="[0-9]{5}" type="text" name="CoMailZip" size="10" id="CoMailZip" tabindex="57" >    
+                    <label for="CoMailCntry">Country</label>
+                    <input type="text" name="CoMailCntry" size="25" id="CoMailCntry" tabindex="58" > <br>
+                    
+                     <label for="CoMaritalStatus">Are you:</label>
+                    <input type="radio" name="CoMaritalStatus" value="CoSingle"
+                      class="radio">Single
+                    <input type="radio" name="CoMaritalStatus" value="CoMarried"
+                      class="radio">Married
+                    <input type="radio" name="CoMaritalStatus" value="CoDomPrtnr"
+                      class="radio">Domestic Partner
+                    <input type="radio" name="CoMaritalStatus" value="CoDivorced"
+                      class="radio">Divorced
+                    <input type="radio" name="CoMaritalStatus" value="CoWidowed"
+                      class="radio">Widowed
+
+                    <label for="CoDepend">Number of Dependents:</label>
+                    <input pattern="[0-9]" type="text" name="CoDepend" size="5" id="CoDepend" tabindex="59" > <br>  
+
+                    <label for="CoMotherName">Mother's Maiden Name:</label>
+                    <input type="text" name="CoMotherName" size="20" id="CoMotherName" tabindex="60" > <br>  
+
+                  </fieldset>
+
+                  <fieldset>
+                   <legend class="text_bld">Employment Status</legend>
+
+                   <label for="CoEmployStatus">Are you currently:</label>
+                    <input type="radio" name="CoEmployStatus" value="CoEmpEmploy"
+                      class="radio">Employed
+                    <input type="radio" name="CoEmployStatus" value="CoEmpSelf"
+                      class="radio">Self-Employed
+                    <input type="radio" name="CoEmployStatus" value="CoEmpNot"
+                      class="radio">Not Employed
+                    <input type="radio" name="CoEmployStatus" value="CoEmpRetired"
+                      class="radio">Retired
+                    <input type="radio" name="CoEmployStatus" value="CoEmpStudent"
+                      class="radio">Student
+                    <input type="radio" name="CoEmployStatus" value="CoEmpOther"
+                      class="radio">Other <br>
+
+                    <label for="CoEmpJob">Job Title</label>
+                    <input type="text" name="CoCoEmpJob" size="25" id="CoEmpJob" tabindex="61" >    
+                    <label for="CoEmpOccup">Occupation</label> <br>
+                    <input type="text" name="CoEmpOccup" size="25" id="CoEmpOccup" tabindex="62" >
+                    <label for="CoEmpBusiness">Employer</label>
+                    <input type="text" name="CoEmpBusiness" size="25" id="CoEmpBusiness" tabindex="63" >    
+                    <label for="CoEmpYears">Years with this Employer</label>
+                    <input type="text" name="CoEmpYears" size="5" id="CoEmpYears" tabindex="64" > <br>  
+
+                    <label for="CoEmpStreet">Business Address</label>
+                    <input type="text" name="CoEmpStreet" size="50" id="CoEmpStreet" tabindex="65" >    
+                    <label for="CoEmpApt">Apt / Suite No.</label>
+                    <input type="text" name="CoEmpApt" size="10" id="CoEmpApt" tabindex="66" > <br>
+
+                    <label for="CoEmpCity">City</label>
+                    <input type="text" name="CoEmpCity" size="25" id="CoEmpCity" tabindex="67" >    
+                    <label for="CoEmpState">State</label>
+                    <input type="text" name="CoEmpState" size="15" id="CoEmpState" tabindex="68" >
+                    <label for="CoEmpZip">ZIP Code</label>
+                    <input pattern="[0-9]{5}" type="text" name="CoEmpZip" size="10" id="CoEmpZip" tabindex="69" >    
+                    <label for="CoEmpCntry">Country</label>
+                    <input type="text" name="CoEmpCntry" size="25" id="CoEmpCntry" tabindex="70" > 
+                    <label for="CoEmpPhone">Work Phone</label>
+                    <input type="tel" name="CoEmpPhone" size="14" id="CoEmpPhone" tabindex="71" >  <br>
+
+                    </fieldset>
+
+                    <fieldset>
+                     <legend class="text_bld">USA Patriot Act Information (Required by Federal law)</legend>
+
+                     <label for="CoPatriotDOB">Date of Birth (mm/dd/yyyy)</label>
+                     <input type="date" name="CoPatriotDOB" size="10" id="CoPatriotDOB" tabindex="72" >  
+                     <label for="CoPatriotSSN">Social Security or Taxpayer ID No.</label>
+                     <input type="text" name="CoPatriotSSN" size="11" id="CoPatriotSSN" tabindex="73" >  
+                     <label for="CoPatriotCntry">Country of Citizenship</label>
+                     <input type="text" name="CoPatriotCntry" size="10" id="CoPatriotCntry" tabindex="74" > <br>
+
+                     <label for="CoPatriotID">ID No. (Select one):</label>
+                     <input type="text" name="CoPatriotID" size="10" id="CoPatriotID" tabindex="75" > 
+                     <input type="radio" name="CoPatriot" value="CoPatriotDL"
+                      class="radio">Driver's License
+                     <input type="radio" name="CoPatriot" value="CoPatriotPass"
+                      class="radio">Passport
+                     <input type="radio" name="CoPatriot" value="CoPatriotStateID"
+                      class="radio">State ID
+                      <input type="radio" name="CoPatriot" value="CoPatriotGovtID"
+                      class="radio">Other Government-issued ID
+
+                      <label for="CoPatriotIssue">Place/Country of Issuance</label>
+                      <input type="text" name="CoPatriotIssue" size="20" id="CoPatriotIssue" tabindex="76" > <br>
+
+                      <label for="CoPatriotIssDate">Issue Date (mm/dd/yyyy)</label>
+                      <input type="date" name="CoPatriotIssDate" size="10" id="CoPatriotIssDate" tabindex="77" >
+                      <label for="CoPatriotExpDate">Expiration Date (mm/dd/yyyy)</label>
+                      <input type="date" name="CoPatriotExpDate" size="10" id="CoPatriotExpDate" tabindex="78" >    
+                      <label for="CoPatriotTaxRes">Country of Tax Residence (if different than country of citizenship</label>
+                      <input type="text" name="CoPatriotTaxRes" size="25" id="CoPatriotTaxRes" tabindex="79" > <br> 
+
+                      </fieldset> 
+
+                     <!-- All Applicants --> 
+
+      <!--               <p class="grayback"><a id="AllApplicants"></a>All Applicants</p>
+                     <a href="#TopForm">Back to the Top</a>
+
+                     <fieldset>
+                     <legend class="text_bld">Industry and Other Affiliations</legend>
+
+                     <table>
+                      <tr>
+                        <td colspan="2">Primary Applicant</td>
+                        <td colspan="2">Co-Applicant</td>
+                        <td>Are you, your spouse, or any other immediate family members, including parents, in-laws, siblings, and dependents:</td>
+                       </tr>
+                       <tr>
+                        <td><input type="radio" name="PrimeRBD" value="Yes">Yes</td>
+                        <td><input type="radio" name="PrimeRBD" value="No">No</td>
+                        <td><input type="radio" name="CoRBD" value="Yes">Yes</td>
+                        <td><input type="radio" name="CoRBD" value="No">No</td>
+                        <td class="text_bld">Employed by or associated with the securities industry (for example, a sole proprietor, partner, officer, director, branch manager, registered representative or other associated person of a broker-dealer firm) or a financial services regulator?</td>  
+                      </tr>
+                    </table>
+
+                      <p>If yes, please specify entity below. If this entity requires its approval for you to open this account, please provide a copy of the required authorization letter (with this Application).</p>
+                       <input type="radio" name="RBDYes" value="RBDBD">Broker-Dealer or Municipal Securities Dealer
+                       <input type="radio" name="RBDYes" value="RBDFINRA">FINRA or other Self Regulatory Organization*>
+                       <input type="radio" name="RBDYes" value="RBDIA">Investment Advisor
+                       <input type="radio" name="RBDYes" value="RBDSFSR">State or Federal Securities Regulator
+                        
+                       <p>(*Including a national securities exchange, registered securities association, registered clearing agency or the Municipal Securities Rulemaking Board.)</p>
+                       
+                       <input type="text" name="RBDYesName" size="25" id="RBDYesName">Name of Entity(ies)
+                       
+                       <table>
+                       <tr>
+                        <td colspan="2">Primary Applicant</td>
+                        <td colspan="2">Co-Applicant</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                       </tr>
+                        <tr>
+                        <td><input type="radio" name="PrimeOfficer" value="Yes">Yes</td>
+                        <td><input type="radio" name="PrimeOfficer" value="No">No</td>
+                        <td><input type="radio" name="CoOfficer" value="Yes">Yes</td>
+                        <td><input type="radio" name="CoOfficer" value="No">No</td>
+                        <td class="text_bld">An officer, director or 10% (or more) shareholder in a publicly-owned company?</td>  
+                      </tr>
+                      <tr>
+                        <td</td>
+                        <td</td>
+                        <td></td>
+                        <td></td>
+                        <td><input type="text" name="OfficerYesName" size="25" id="OfficerYesName">Name of Company and Symbol</td>
+                       </tr> 
+                       <tr>
+                        <td colspan="2">Primary Applicant</td>
+                        <td colspan="2">Co-Applicant</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                       </tr>
+                       <tr>
+                        <td><input type="radio" name="PrimeNonUS" value="Yes">Yes</td>
+                        <td><input type="radio" name="PrimeNonUS" value="No">No</td>
+                        <td><input type="radio" name="CoNonUS" value="Yes">Yes</td>
+                        <td><input type="radio" name="CoNonUS" value="No">No</td>
+                        <td class="text_bld">A senior military, governmental or political official in a non-US country?</td>  
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input type="text" name="NonUSYesName" size="25" id="NonUSYesName">Name of Country</td>
+                       </tr> 
+                       <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>[Firms may consider whether to include this question in the context of their risk assessment procedures and the products and services they offer.]</td>
+                       </tr> 
+
+                     </table>
+                     </fieldset>
+
+                      <!-- Financial Review -->
+<!--
+                     <p class="formhead"><a id="FinancialReview"></a>Financial Review</p>
+                     <a href="#TopForm">Back to the Top</a>
+
+                     <fieldset>
+                      <legend class="text_bld">Financial Situatoin and Needs, Liquidity Considerations, and Tax Status</legend>
+                      <p class="text_ital">Please tell us your best estimate as to:</p>
+
+                      <table>
+                       <tr>
+                        <th class="grayback">Annual Gross Income (from all sources)</th>
+                        <th class="grayback">Net Worth (excluding your residence)</th>
+                        <th class="grayback">Annual Expenses (recurring)</th>
+                       </tr>
+                       <tr>
+                        <td><input type="checkbox" name="AGI" value="AGIUnder">$25,000 and under</td>
+                        <td><input type="checkbox" name="NetWth" value="NetWthUnder">$25,000 and under</td>
+                        <td><input type="checkbox" name="AnExp" value="AnExpUnder">$50,000 and under</td>
+                       </tr> 
+                       <tr>
+                        <td><input type="checkbox" name="AGI" value="AGI25">$25,001 - $50,000</td>
+                        <td><input type="checkbox" name="NetWth" value="NetWth25">$25,001 - $50,000</td>
+                        <td><input type="checkbox" name="AnExp" value="AnExp50">$50,001 - $100,000</td>
+                       </tr> 
+                       <tr>
+                        <td><input type="checkbox" name="AGI" value="AGI50">$50,001 - $100,000</td>
+                        <td><input type="checkbox" name="NetWth" value="NetWth50">$50,001 - $100,000</td>
+                        <td><input type="checkbox" name="AnExp" value="AnExp100">$100,001 - $250,000</td>
+                       </tr> 
+                      <tr>
+                        <td><input type="checkbox" name="AGI" value="AGI100">$100,001 - $250,000</td>
+                        <td><input type="checkbox" name="NetWth" value="NetWth100">$100,001 - $250,000</td>
+                        <td><input type="checkbox" name="AnExp" value="AnExp250">$250,001 - $500,000</td>
+                       </tr> 
+                       <tr>
+                        <td><input type="checkbox" name="AGI" value="AGI250">$250,001 - $500,000</td>
+                        <td><input type="checkbox" name="NetWth" value="NetWth250">$250,001 - $500,000</td>
+                        <td><input type="checkbox" name="AnExp" value="AnExpOver">Over $500,000</td>
+                       </tr> 
+                       <tr>
+                        <td><input type="checkbox" name="AGI" value="AGIOver">Over $500,000</td>
+                        <td><input type="checkbox" name="NetWth" value="NetWth500">$500,001 - $1,000,000</td>
+                        <td></td>
+                       </tr> 
+                       <tr>
+                        <td></td>
+                        <td><input type="checkbox" name="NetWth" value="NetWth1000">$1,000,001 - $3,000,000</td>
+                        <td></td>
+                       </tr> 
+                       <tr>
+                        <td></td>
+                        <td><input type="checkbox" name="NetWth" value="NetWthOver">Over $3,000,000</td>
+                        <td></td>
+                       </tr> 
+                      </table>
+                     </fieldset>
+
+                     <!-- Account Features -->
+   <!--                  <p class="formhead"><a id="WorkWithUs"></a>3 Tell Us How You Want to Work With Us</p>
+                     <a href="#TopForm">Back to the Top</a>
+
+                     <p class="grayback">Account Features</p>
+
+                     <p class="text_ital">Please note: You may change your account features and options at any time, with advance written notice to us.
+                     </p>
+
+                     <p class="text_bld">Please Read Carefully</p>
+                     <p>You will have a &quot;cash account,&quot; unless you choose to have a &quot;margin loan account&quot; (customarily known as a &quot;margin account&quot;). To help you decide whether a margin loan account is right for you, please read this information, the Margin Loan Agreement and the Margin Disclosure Statement.
+                     </p>
+                     <p>In a cash account, you pay for your securities in full by the settlement date of the purchase (generally three business days from the purchase). In a margin loan account, we may lend you a portion of the purchase price. This is called buying securities &quot;on margin.&quot; For example, when you buy equity securities (such as common stock) on margin, you typically must deposit at least 50% of the purchase price, and we would loan you the balance. <span class="text_bld">You are liable for repaying the borrowed funds and the interest incurred. </span>
+
+
+                     <fieldset>
+
+                      <legend class="text_bld">Managing Your Cash</legend>
+                      <p>Sometimes there is cash in your account that hasn’t been invested. For example, you may have just deposited money into your account without giving instructions on how to invest it, or you may have received cash dividends or interest. We will automatically place—or “sweep”—that cash into one of the cash management programs listed below—also called &quot;cash sweep programs.&quot; Cash management programs offer different benefits and risks, including different interest rates, customer protections and insurance coverage (namely, FDIC or SIPC coverage). Some may have certain eligibility criteria, such as minimum cash balances and specific account types. 
+                      </p>  
+                      <p><span class="text_bld">Please choose one of the cash management programs listed below. You may instruct us to change your selected cash management program at any time to another, if you meet the eligibility criteria of the new cash management program. If you do not choose one, we will automatically place your uninvested cash into the default cash management program, which will be [XXXX].</span> We will give you advance notice of any change in your choice or of the options generally available to you. We may need your consent for certain changes, but not for others. For more information on available cash management programs, please see [Cash Management Disclosure Document], which we will provide to you.
+                      </p>  
+
+                      <p class="grayback">Sales proceeds (check one):</p>
+                      <input type="radio" name="Proceeds" value="ProceedsMail"
+                      class="radio">Mail check to address of record<br>
+                     <input type="radio" name="Proceeds" value="ProceedsSend"
+                      class="radio">Send directly to bank account. Please provide bank routing number and account number <br>
+                      <label for="ProceedsR">Bank Routing Number:</label>
+                     <input pattern="[0-9]" type="text" name="ProceedsR" size="20" id="ProceedsRouting" tabindex="80" > <br>
+                     <label for="ProceedsA">Bank Account Number:</label>
+                     <input pattern="[0-9]" type="text" name="ProceedsA" size="20" id="ProceedsAcct" tabindex="81" > <br>
+                     <input type="radio" name="Proceeds" value="ProceedsSweep"
+                      class="radio">Sweep into Momey Market Fund<br>
+
+                      <p class="grayback">Dividends/Interest (check one):</p>
+                      <input type="radio" name="Dividend" value="DividendMail"
+                      class="radio">Mail check to address of record<br>
+                     <input type="radio" name="Dividend" value="DividendSend"
+                      class="radio">Send direct to bank account.  Please provide bank routing number and account number <br>
+                      <label for="DividendR">Bank Routing Number:</label>
+                     <input pattern="[0-9]" type="text" name="DividendR" size="20" id="DividendRouting" tabindex="82" > <br>
+                     <label for="DividendA">Bank Account Number:</label>
+                     <input pattern="[0-9]" type="text" name="DividendA" size="20" id="DividendAcct" tabindex="83" > <br>
+                     <input type="radio" name="Dividend" value="DividendSweep"
+                      class="radio">Sweep into Momey Market Fund<br>
+                      <input type="radio" name="Dividend" value="DividendReinvest"
+                      class="radio">Reinvest in the same security<br>
+                      </fieldset>
+
+                      <!-- Communication Choices -->
+
+       <!--               <p class="formhead"><a id="Communication"></a>4 Communication Choices</p>
+                      <a href="#TopForm">Back to the Top</a>
+
+                      <fieldset>
+                       <legend class="text_bld">Communications Choices</legend> 
+
+                       <p>If you want the communications sent to a different e-mail address other than your primary e-mail address, please specify.</p>
+                       <label for="Alternateemail">Alternative E-mail address:</label>
+                      <input type="email" name="Alternateemail" size="25" id="AlternateEM" tabindex="84" > <br>
+                       </fieldset>
+
+                       <fieldset>
+                       <legend>Back-Up Contact Information</legend> 
+                        <label for="CoPrefix">Prefix:</label>
+                    <input type="radio" name="BackPrefix" value="BackMr"
+                      class="radio">Mr.
+                    <input type="radio" name="BackPrefix" value="BackMs"
+                      class="radio">Ms.
+                    <input type="radio" name="BackPrefix" value="BackMrs"
+                      class="radio">Mrs.
+                    <input type="radio" name="BackPrefix" value="BackDr"
+                      class="radio">Dr.
+
+                     <label for="BackSuffix">Suffix</label>
+                    <input type="radio" name="BackSuffix" value="BackSr"
+                      class="radio">Sr.
+                    <input type="radio" name="BackSuffix" value="BackJr"
+                      class="radio">Jr. <br>
+
+                    <label for="BackFirst">First Name</label>
+                    <input type="text" name="BackFirst" size="25" id="BackFirst" tabindex="85" >
+                    <label for="BackMiddle">Middle Name</label>
+                    <input type="text" name="BackMiddle" size="25" id="BackMiddle" tabindex="86" >    
+                    <label for="BackLast">Last Name</label>
+                    <input type="text" name="BackLast" size="30" id="BackLast" tabindex="87" > <br>
+
+                    <label for="BackPermStreet">Permanent Address</label>
+                    <input type="text" name="BackPermStreet" size="50" id="BackPermStreet" tabindex="88" >    
+                    <label for="BackPermApt">Apt / Suite No.</label>
+                    <input type="text" name="BackPermApt" size="10" id="BackPermApt" tabindex="89" > <br>
+
+                    <label for="BackPermCity">City</label>
+                    <input type="text" name="BackPermCity" size="25" id="BackPermCity" tabindex="90" >    
+                    <label for="BackPermState">State</label>
+                    <input type="text" name="BackPermState" size="15" id="BackPermState" tabindex="91" >
+                    <label for="BackPermZip">ZIP Backde</label>
+                    <input pattern="[0-9]{5}" type="text" name="BackPermZip" size="10" id="BackPermZip" tabindex="92" >    
+                    <label for="BackPermCntry">Backuntry</label>
+                    <input type="text" name="BackPermCntry" size="25" id="BackPermCntry" tabindex="93" > <br>
+
+                    <label for="BackPhoneHome">Home Phone</label>
+                    <input type="tel" name="BackPhoneHome" size="14" id="BackPhoneHome" tabindex="94" >                    
+                    <label for="BackPhoneMobile">Mobile Phone</label>
+                    <input type="tel" name="BackPhoneMobile" size="14" id="BackPhoneMobile" tabindex="95" > 
+                    <label for="BackEmail">E-Mail Address</label>
+                    <input type="email" name="BackEmail" size="25" id="BackEmail" tabindex="96" > <br>
+
+                    <label for="BackRelation">Relationship to Primary Applicant / Co-Applicant:</label>
+                    <input type="text" name="BackRelation" size="25" id="BackRelation" tabindex="97" > <br>                    
+
+                   </fieldset>
+
+                    <!-- Review Application -->                   
+     <!--              <p class="formhead"><a id="Review"></a>5 Review and Submit This Application</p>
+                   <a href="#TopForm">Back to the Top</a>
+
+                   <p class="grayback">Confirmations and Signatures - Please Read Carefully</p>
+
+                   <fieldlist>
+                    <legend class="text_bld">Tax Withholding Certifications</legend>
+                    <p>Please check all boxes that apply, and sign and date below.</p>
+                    <p>U.S. Person: Under penalty of perjury, I certify that: (1) I am a U.S. citizen, U.S. resident alien or other U.S. person, and the Social Security Number or Taxpayer Identification Number provided in this Application is correct (or I am waiting for a number to be issued to me); and (2) I am not subject to backup withholding because: (a) I am exempt from backup withholding; or (b) I have not been notified by the Internal Revenue Service (IRS) that I am subject to backup withholding as a result of a failure to report all interest or dividends; or (c) the IRS has notified me that I am no longer subject to backup withholding.</p>
+
+                   <label for="PersonPrime" class="text_ital">Primary Applicant</label>
+                    <input type="checkbox" name="PersonPrime" id="PersonPrime"> 
+                   <label for="PersonCo" class="text_ital">Co-Applicant</label>
+                    <input type="checkbox" name="PersonCo" id="PersonCo"> <br>
+
+                    <p>Certification Instructions: You must check this box if you cannot certify to item (2) above, meaning that you have been notified by the IRS that you are currently subject to backup withholding because you have failed to report all interest and dividends on your tax return.</p>
+
+                   <label for="CertPrime" class="text_ital">Primary Applicant</label>
+                    <input type="checkbox" name="CertPrime" id="CertPrime"> 
+                   <label for="CertCo" class="text_ital">Co-Applicant</label>
+                    <input type="checkbox" name="CertCo" id="CertCo"> <br>
+
+                    <p>Non-Resident Alien: I certify that I am not a U.S. citizen, U.S. resident alien, or other U.S. person for U.S. tax purposes, and I am submitting the applicable Form W-8 with this form to certify my foreign status and, if applicable, claim tax treaty benefits.</p>
+
+                   <label for="AlienPrime" class="text_ital">Primary Applicant</label>
+                    <input type="checkbox" name="AlienPrime" id="AlienPrime"> 
+                   <label for="AlienCo" class="text_ital">Co-Applicant</label>
+                    <input type="checkbox" name="AlienCo" id="AlienCo"> <br>
+
+                    </fieldset>
+
+                    <p class="grayback"><a id="Signatures"></a>Signatures</p>
+
+                    <fieldset>
+                      <legend class="text_bld">Signatures</legend>
+
+                    <label for="PrimeAppName">Primary Applicant Name (please print)</label>
+                    <input type="text" name="PrimeAppName" size="25" id="PrimeAppName" required tabindex="98" > <br>            
+                    <label for="PrimeAppSign">Primary Applicant Signature</label>
+                    <input type="text" name="PrimeAppSign" size="25" id="PrimeAppSign">  
+                    <label for="PrimeAppDate">Date</label>
+                    <input type="date" name="PrimeAppDate" size="11" id="PrimeAppDate" required tabindex="99" > <br>                       
+
+                    <label for="CoAppName">Primary Applicant Name (please print)</label>
+                    <input type="text" name="CoAppName" size="25" id="CoAppName" tabindex="100" > <br>            
+                    <label for="CoAppSign">Primary Applicant Signature</label>
+                    <input type="text" name="CoAppSign" size="25" id="CoAppSign" >  
+                    <label for="CoAppDate">Date</label>
+                    <input type="date" name="CoAppDate" size="11" id="CoAppDate" tabindex="101" > <br>                       
+
+                     </fieldset>
+                 
+                     <input type="submit" value="Submit" tabindex="102" >
+                     <input type="reset" value="Reset">
+                     <a href="#TopForm">Back to the Top</a>
+
+
+              </form>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!--<div ng-include="'components/investmenttools/sidebar.html'"></div>-->
+  </div>
+</div>
