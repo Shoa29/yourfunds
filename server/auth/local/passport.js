@@ -10,7 +10,10 @@ exports.setup = function (User, config) {
       User.findOne({
         email: email.toLowerCase()
       }, function(err, user) {
-        if (err) return done(err);
+        if (err){
+          console.log(user);
+          return done(err);
+        } 
 
         if (!user) {
           return done(null, false, { message: 'This email is not registered.' });
@@ -22,4 +25,13 @@ exports.setup = function (User, config) {
       });
     }
   ));
+  passport.serializeUser(function(user, done) {
+    done(null, user.id);
+  });
+  
+  passport.deserializeUser(function(id, done) {
+    User.findById(id, function(err, user) {
+      done(err, user);
+    });
+  });
 };

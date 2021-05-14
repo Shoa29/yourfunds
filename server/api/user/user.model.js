@@ -1,11 +1,12 @@
 'use strict';
 
 var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+
 var crypto = require('crypto');
+const passportLocalMongoose = require('passport-local-mongoose');
 var authTypes = ['github', 'twitter', 'facebook', 'google'];
 
-var UserSchema = new Schema({
+var UserSchema = new mongoose.Schema({
   name: String,
   email: { type: String, lowercase: true },
   role: {
@@ -149,11 +150,11 @@ UserSchema.methods = {
   encryptPassword: function(password) {
     if (!password || !this.salt) return '';
     var salt = new Buffer(this.salt, 'base64');
-    return crypto.pbkdf2Sync(password, salt, 10000, 64).toString('base64');
+    return crypto.pbkdf2Sync(password, salt, 10000, 'base64').toString('base64');
   }
 };
 
 
-
+ UserSchema.plugin(passportLocalMongoose);
 
 module.exports = mongoose.model('User', UserSchema);

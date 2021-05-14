@@ -1,0 +1,12 @@
+node_modules
+# public
+.tmp
+.idea
+client/bower_components
+.DS_Store
+npm-debug.log
+/*.env
+
+/server/config/local.env.js
+/.nvmrc
+/npm-debug.log

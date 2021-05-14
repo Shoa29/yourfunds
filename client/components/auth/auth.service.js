@@ -24,14 +24,14 @@ angular.module('yourfundFullstackApp')
         $http.post('/auth/local', {
           email: user.email,
           password: user.password
-        }).
-        success(function(data) {
-          $cookieStore.put('token', data.token);
+        }).then(function(data) {
+          console.log(data.data.token);
+          $cookieStore.put('token', data.data.token);
           currentUser = User.get();
           deferred.resolve(data);
           return cb();
-        }).
-        error(function(err) {
+        }).catch(function(err) {
+          console.log("logging out")
           this.logout();
           deferred.reject(err);
           return cb(err);
@@ -46,7 +46,7 @@ angular.module('yourfundFullstackApp')
        * @param  {Function}
        */
       logout: function() {
-        $cookieStore.remove('token');
+        //$cookieStore.remove('token');
         currentUser = {};
       },
 
