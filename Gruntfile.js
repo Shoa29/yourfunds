@@ -388,7 +388,7 @@ module.exports = function (grunt) {
       },
       heroku: {
         options: {
-          remote: 'git@heroku.com:pure-escarpment-1393.git',
+          remote: 'https://git.heroku.com/yourfunds.git',
           branch: 'master'
         }
       },
@@ -623,7 +623,8 @@ module.exports = function (grunt) {
    // 'build',
     'buildcontrol:pages'
   ]);
-
+  grunt.registerTask('heroku',
+    ['compass:dist', 'autoprefixer', 'imagemin']);
   grunt.registerTask('default', [
     'newer:jshint',
     'test',
