@@ -37,17 +37,17 @@ secret : 'foo'
   
   if ('production' === env) {
 
-    app.use(express.static(path.join(config.root, 'public')));
+    app.use(express.static(path.join(config.root, 'dist/public')));
 
-    app.set('appPath', config.root + '/public');
+    app.set('appPath', config.root + '/dist/public');
     app.use(morgan('dev'));
   }
 
   if ('development' === env || 'test' === env) {
 
     app.use(express.static(path.join(config.root, '.tmp')));
-    app.use(express.static(path.join(config.root, 'client')));
-    app.set('appPath', 'client');
+    app.use(express.static(path.join(config.root, 'dist/public')));
+    app.set('appPath', 'dist/public');
     app.use(morgan('dev'));
     app.use(errorHandler()); // Error handler - has to be last
   }
