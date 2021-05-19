@@ -1,1 +1,1 @@
-web: grunt serv
+web: grunt serve
