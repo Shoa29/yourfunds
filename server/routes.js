@@ -28,6 +28,6 @@ module.exports = function(app) {
     .get(function(req, res) {
       console.log('navigating to :' + app.get('appPath') + '/index.html');
       //res.sendfile(app.get('appPath') + '/index.html');
-      res.sendfile(  express.static(__dirname + 'build/public/index.html'));
+      res.sendfile(  express.static(__dirname + 'dist/public/index.html'));
     });
 };
