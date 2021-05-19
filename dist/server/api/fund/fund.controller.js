@@ -362,7 +362,7 @@ exports.create = function (req, res) {
     user.save(function (errs) {
       if (errs) {
         console.log(errs);
-        return res.render('500');
+        return res.send(500);
       }
 
       transaction.create(
@@ -446,14 +446,17 @@ exports.destroy = function (req, res) {
 exports.finalize = function (req, res) {
 
   var user = req.user;
+  console.log("in finalize")
 
   fund.findById(req.params.id, function (err, fund) {
+
     if (err) {
       return handleError(res, err);
     }
     if (!fund) {
       return res.send(404);
     }
+    console.log("in finalize")
 
     fund.set({"finalized": true});
     fund.set({"originalCash": fund.cash});

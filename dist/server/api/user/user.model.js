@@ -1,11 +1,12 @@
 'use strict';
 
 var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+
 var crypto = require('crypto');
+const passportLocalMongoose = require('passport-local-mongoose');
 var authTypes = ['github', 'twitter', 'facebook', 'google'];
 
-var UserSchema = new Schema({
+var UserSchema = new mongoose.Schema({
   name: String,
   email: { type: String, lowercase: true },
   role: {
@@ -82,20 +83,20 @@ UserSchema
     return hashedPassword.length;
   }, 'Password cannot be blank');
 
-// // Validate email is not taken
-// UserSchema
-//   .path('email')
-//   .validate(function(value, respond) {
-//     var self = this;
-//     this.constructor.findOne({email: value}, function(err, user) {
-//       if(err) throw err;
-//       if(user) {
-//         if(self.id === user.id) return respond(true);
-//         return respond(false);
-//       }
-//       respond(true);
-//     });
-// }, 'The specified email address is already in use.');
+// Validate email is not taken
+UserSchema
+  .path('email')
+  .validate(function(value, respond) {
+    var self = this;
+    this.constructor.findOne({email: value}, function(err, user) {
+      if(err) throw err;
+      if(user) {
+        if(self.id === user.id) return respond(true);
+        return respond(false);
+      }
+      respond(true);
+    });
+}, 'The specified email address is already in use.');
 
 var validatePresenceOf = function(value) {
   return value && value.length;
@@ -149,11 +150,11 @@ UserSchema.methods = {
   encryptPassword: function(password) {
     if (!password || !this.salt) return '';
     var salt = new Buffer(this.salt, 'base64');
-    return crypto.pbkdf2Sync(password, salt, 10000, 64, 'sha1').toString('base64');
+    return crypto.pbkdf2Sync(password, salt, 10000, 'base64').toString('base64');
   }
 };
 
 
-
+ UserSchema.plugin(passportLocalMongoose);
 
 module.exports = mongoose.model('User', UserSchema);
